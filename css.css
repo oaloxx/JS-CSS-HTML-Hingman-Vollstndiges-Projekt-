@@ -1,0 +1,237 @@
+body {
+    background: #202020;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#nn {
+    display: flex;
+    margin-bottom: 20px;
+   
+    
+}
+
+.inpo {
+    height: 40px;
+    width: 200px;
+    outline: 0;
+    outline-color: #202020;
+    border-width: 0 0 2px;
+    border-color: green;
+    background-color: #202020;
+    color: azure;
+    font-size: xx-large;
+    margin: 2px;
+    width: 50px;
+    text-align: center;
+}
+
+.cbv {
+    height: 150px;
+
+}
+
+.ser {
+    color: white;
+    font-size: xx-large;
+    
+}
+
+#button,button {
+    height: 50px;
+    width: 50px;
+    font-size: xx-large;
+    margin: 2px;
+}
+
+#button,button:hover {
+    background-color: aqua;
+}
+
+#bus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+}
+
+
+
+#inpocert {
+    width: 205px;
+    height: 30px;
+    font-size: x-large;
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    color: #fff;
+    background: transparent;
+
+}
+
+#butoncert {
+    width: 245px;
+    height: 30px;
+    position: fixed;
+    top: 110px;
+    right: 10px;
+    font-size: large;
+}
+
+#di1{
+    width: 50px;
+    height: 2px;
+    position: fixed;
+    top: 150px;
+    left: 10px;
+    background-color: #fff;
+    
+}
+
+#di2{
+    width: 2px;
+    height: 130px;
+    position: fixed;
+    top: 20px;
+    left: 33px;
+    background-color: #fff;
+
+}
+
+#di3{
+    width: 120px;
+    height: 2px;
+    position: fixed;
+    top: 20px;
+    left: 33px;
+    background-color: #fff;
+
+}
+
+#di4{
+    width: 55px;
+    height: 2px;
+    position: fixed;
+    top: 40px;
+    left: 33px;
+    background-color: #fff;
+    transform: skewY(-36deg);
+
+}
+
+#di5{
+    width: 3px;
+    height: 15px;
+    position: fixed;
+    top: 20px;
+    left: 150px;
+    background-color: #fff;
+
+}
+
+#di6 {
+    width: 15px; 
+    height: 15px; 
+    border: 2px solid #fff; 
+    border-radius: 50%;
+    position: fixed;
+    top: 35px;
+    left: 142px;
+}
+
+#di7{
+    width: 2px;
+    height: 40px;
+    position: fixed;
+    top: 52px;
+    left: 150px;
+    background-color: #fff;
+
+}
+
+#di8{
+    width: 20px;
+    height: 2px;
+    position: fixed;
+    top: 65px;
+    left: 150px;
+    background-color: #fff;
+    transform: skewY(36deg);
+
+} 
+
+#di9{
+    position: fixed;
+    top: 66px;
+    width: 16px;
+    height: 2px;
+    left: 135px;
+    background-color: #fff;
+    transform: skewY(-45deg);
+}
+
+#di10{
+    position: fixed;
+    top: 103px;
+    width: 25px;
+    height: 2px;
+    left: 125px;
+    background-color: #fff;
+    transform: skewY(-45deg);
+}
+
+#di11{
+    width: 25px;
+    height: 2px;
+    position: fixed;
+    top: 100px;
+    left: 150px;
+    background-color: #fff;
+    transform: skewY(45deg);
+
+} 
+
+#start{
+    width: auto;
+    font-size: xx-large;
+}
+
+#div2 {
+    width: 100%;
+    height: 100%;
+    background: #202020;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#butto1{
+    text-align: center;
+    background-color: #1c87c9;
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 278px;
+    position: relative;
+    top: -30px; 
+
+}

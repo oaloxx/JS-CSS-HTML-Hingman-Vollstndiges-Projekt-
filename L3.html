@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="css.css" />
+</head>
+
+
+
+<body>
+
+    <button onclick="start()" id="start">STARTEN</button>
+
+    <script>
+
+        function start(){
+
+            let srta = document.getElementById("start");
+            srta.remove();
+
+            // Erstelle das Div mit der Klasse "cbv" und dem Label
+            const cbvDiv = document.createElement("div");
+            cbvDiv.className = "cbv";
+            const label = document.createElement("label");
+            label.id = "DZV";
+            label.className = "ser";
+            label.textContent = "Kleidung"; //Jacke
+            cbvDiv.appendChild(label);
+
+            // Erstelle das Div mit der ID "nn" und den Textfeldern
+            const nnDiv = document.createElement("div");
+            nnDiv.id = "nn";
+            for (let i = 0; i < 5; i++) {
+                const input = document.createElement("input");
+                input.className = "inpo";
+                input.id = String.fromCharCode(97 + i); 
+                input.type = "text";
+                nnDiv.appendChild(input);
+            }
+
+            // Erstelle das Div mit der ID "bus" und den Buttons
+            const busDiv = document.createElement("div");
+            busDiv.id = "bus";
+            const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZÄÜÖß";
+            for (let i = 0; i < alphabet.length; i++) {
+                const button = document.createElement("button");
+                button.onclick = function() {
+                    handleButtonClick(alphabet[i]);
+                };
+                button.id = "button-" + alphabet[i];
+                button.textContent = alphabet[i];
+                busDiv.appendChild(button);
+            }
+
+            // Füge die erstellten Elemente zum Body hinzu
+            document.body.appendChild(cbvDiv);
+            document.body.appendChild(nnDiv);
+            document.body.appendChild(busDiv);
+
+            // Funktion für den Button-Klick
+            function handleButtonClick(letter) {
+                console.log("Button " + letter + " wurde geklickt!");
+                // Füge hier deine gewünschte Logik hinzu
+            }
+
+            let aa = document.getElementById("a");
+            let bb = document.getElementById("b");
+            let cc = document.getElementById("c");
+            let dd = document.getElementById("d");
+            let ee = document.getElementById("e");
+       
+
+
+            let lab = document.getElementById("DZV");
+
+
+
+
+
+            let variabl;
+
+            let zahl = 0;
+
+            function updateVariable(letter) {
+
+                let buchstab1 = "J";
+                let buchstab2 = "A";
+                let buchstab3 = "C";
+                let buchstab4 = "K";
+                let buchstab5 = "E";
+      
+            
+
+                if (aa.value === "" && letter === buchstab1 && !variabl) {
+                    aa.value = letter;
+                } else if (bb.value === "" && letter === buchstab2 && !variabl) {
+                    variabl = bb;
+                } else if (cc.value === "" && letter === buchstab3 && !variabl) {
+                    variabl = cc;
+                } else if (dd.value === "" && letter === buchstab4 && !variabl) {
+                    variabl = dd;                
+                } else if (ee.value === "" && letter === buchstab5 && !variabl) {
+                    variabl = ee;                
+                } 
+                else {
+
+                    zahl += 1;
+                    
+                    if (zahl === 1){
+
+                        var divElement = document.createElement('div');
+                        divElement.id = 'di1';
+                        document.body.appendChild(divElement);
+
+                    }   else if (zahl === 2){
+
+                        var divElement = document.createElement('div');
+                        divElement.id = 'di2';
+                        document.body.appendChild(divElement);
+
+                    } else if (zahl === 3){
+
+                        var divElement = document.createElement('div');
+                        divElement.id = 'di3';
+                        document.body.appendChild(divElement);
+
+                    } else if (zahl === 4){
+
+                        var divElement = document.createElement('div');
+                        divElement.id = 'di4';
+                        document.body.appendChild(divElement);
+
+                    } else if (zahl === 5){
+
+                        var divElement = document.createElement('div');
+                        divElement.id = 'di5';
+                        document.body.appendChild(divElement);
+
+                    } else if (zahl === 6){
+
+                        var divElement = document.createElement('div');
+                        divElement.id = 'di6';
+                        document.body.appendChild(divElement);
+
+                    } else if (zahl === 7){
+
+                        var divElement = document.createElement('div');
+                        divElement.id = 'di7';
+                        document.body.appendChild(divElement);
+
+                    } else if (zahl === 8){
+
+                        var divElement = document.createElement('div');
+                        divElement.id = 'di8';
+                        document.body.appendChild(divElement);
+
+                    } else if (zahl === 9){
+
+                        var divElement = document.createElement('div');
+                        divElement.id = 'di9';
+                        document.body.appendChild(divElement);
+
+                    } else if (zahl === 10){
+
+                        var divElement = document.createElement('div');
+                        divElement.id = 'di10';
+                        document.body.appendChild(divElement);
+
+                    } else if (zahl === 11){
+
+                        alert("DU hast verloren, wiederhol mal mir dem Helfe!")
+
+                        var divElement = document.createElement('div');
+                        divElement.id = 'di11';
+                        document.body.appendChild(divElement);
+
+                        zahl = 0;
+
+
+                        try {
+                            let dde1 = document.getElementById("di1").remove();
+                        } catch {
+
+                        }
+
+                        try {
+                            let dde2 = document.getElementById("di2").remove();
+                        } catch {
+
+                        }
+
+                        try {
+                            let dde3 = document.getElementById("di3").remove();
+                        } catch {
+
+                        }
+
+                        try {
+                            let dde4 = document.getElementById("di4").remove();
+                        } catch {
+
+                        }
+
+                        try {
+                            let dde5 = document.getElementById("di5").remove();
+                        } catch {
+
+                        }
+
+                        try {
+                            let dde6 = document.getElementById("di6").remove();
+                        } catch {
+
+                        }
+
+                        try {
+                            let dde7 = document.getElementById("di7").remove();
+                        } catch {
+
+                        }
+
+                        try {
+                            let dde8 = document.getElementById("di8").remove();
+                        } catch {
+
+                        }
+
+                        try {
+                            let dde9 = document.getElementById("di9").remove();
+                        } catch {
+
+                        }
+
+                        try {
+                            let dde10 = document.getElementById("di10").remove();
+                        } catch {
+
+                        }
+
+                        try {
+                            let dde11 = document.getElementById("di11").remove();
+                        } catch {
+
+                        }
+
+                        aa.value = "";
+                        bb.value = "";
+                        cc.value = "";
+                        dd.value = "";
+                        ee.value = "";
+       
+
+                    }
+                }
+            }
+        
+
+            function handleButtonClick(letter) {
+                let aa = document.getElementById("a");
+                let bb = document.getElementById("b");
+                let cc = document.getElementById("c");
+                let dd = document.getElementById("d");
+                let ee = document.getElementById("e");
+
+            
+
+                updateVariable(letter);
+                if (variabl) {
+                    variabl.value = letter;
+                    variabl = null;
+                }
+
+                if (letter === "J" || letter === 'A' || letter === 'C' || letter === 'K' || letter === 'E') {
+                    // Change the button's background color to green
+                    let butt = document.getElementById('button-' + letter);
+                    butt.style.backgroundColor = 'green';
+                    butt.disabled = true;
+                    
+                    if (aa.value === "J" && bb.value === 'A' && cc.value === 'C' && dd.value === 'K' && ee.value === 'E') {
+                        rando();
+                    }
+
+                } else {
+                    // Change the button's background color to red
+                    let butt1 = document.getElementById('button-' + letter);
+                    butt1.style.backgroundColor = 'red';
+                    butt1.disabled = true;
+                }
+            }
+
+
+
+            ///////////////////////////////////////////////////////////////////////////////
+            function handleKeyPress(event, letter) {
+                const uppercaseLetter = letter.toUpperCase();
+                if (event.key === letter || event.key === uppercaseLetter) {
+                    handleButtonClick(uppercaseLetter);
+                }
+            }
+
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'a'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'b'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'c'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'd'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'e'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'f'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'g'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'h'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'i'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'j'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'k'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'l'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'm'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'n'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'o'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'p'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'q'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'r'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 's'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 't'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'u'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'v'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'w'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'x'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'y'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'z'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'Ä'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'Ö'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'Ü'));
+            document.addEventListener('keydown', (event) => handleKeyPress(event, 'ß'));
+
+
+
+
+
+
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+            function rando() {
+                let xcndj = document.createElement("div");
+                xcndj.id = "div2";
+
+   
+                let butto = document.createElement("a");
+                butto.href = "C:\\Users\\Moham\\Desktop\\PROG\\html-css\\gusse word\\L4.html";
+                butto.text = "Gehe zu level-4";
+           
+                butto.id = "butto1";
+
+                // Füge das h1-Element zum div2 hinzu
+                xcndj.appendChild(butto);
+
+                document.body.appendChild(xcndj);
+            }
+        
+        }
+        
+
+    </script>
+
+    
+
+</body>
+
+</html>
